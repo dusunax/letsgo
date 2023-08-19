@@ -1,8 +1,12 @@
+import { Outlet } from "react-router-dom";
+import Header from "./components/patial/Header";
+
 function App() {
   return (
-    <h1 className="font-bold text-black-100 padding-x paddingX bg-secondary">
-      hello world
-    </h1>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
 }
 
